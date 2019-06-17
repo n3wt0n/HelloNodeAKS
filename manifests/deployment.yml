@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: hellonode 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hellonode 
+    spec:
+      containers:
+        - name: hellonode 
+          image: devcamptestacr.azurecr.io/hellonode 
+          ports:
+          - containerPort: 8000
