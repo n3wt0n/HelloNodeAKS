@@ -1,5 +1,5 @@
 # use a node base image
-FROM node:7-onbuild
+FROM node:carbon-onbuild
 
 # set a health check
 HEALTHCHECK --interval=5s \
